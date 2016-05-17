@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:id="@+id/ll_main"
+       android:layout_above="@+id/rg_main">
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background"
+        android:layout_above="@+id/rg_main"
+        />
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/rg_main"
+        >
+        <RadioButton
+            android:id="@+id/rbtn_homefragment_training"
+            style="@style/homefragmentRadiobuttonstyle"
+            android:drawableTop="@drawable/selector_radiobutton_training"
+            android:text="训练"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/rbtn_homefragment_race"
+            style="@style/homefragmentRadiobuttonstyle"
+            android:drawableTop="@drawable/selector_radiobutton_race"
+            android:text="比赛" />
+
+        <RadioButton
+            android:id="@+id/rbtn_homefragment_me"
+            style="@style/homefragmentRadiobuttonstyle"
+            android:drawableTop="@drawable/selector_radiobutton_me"
+            android:text="我的" />
+
+    </RadioGroup>
+</RelativeLayout>
